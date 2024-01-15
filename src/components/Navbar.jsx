@@ -54,8 +54,8 @@ const Navbar =
             <p className="text-white text-[18px] font-bold text-xl cursor-pointer flex">
               Jason&nbsp;
               <span className="sm:block hidden">
-                |
-                BYU-Hawaii
+                {/* |
+                BYU-Hawaii */}
               </span>
             </p>
           </Link>
