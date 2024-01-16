@@ -1,10 +1,11 @@
-import React from 'react'
-import { Tilt } from 'react-tilt'
-import { motion } from 'framer-motion'
+import React from "react"
+import Tilt from "react-parallax-tilt"
+import { motion } from "framer-motion"
 
-import { styles } from '../styles'
-import { services } from '../constants'
-import { fadeIn, textVariant } from '../utils/motion'
+import { styles } from "../styles"
+import { services } from "../constants"
+import { SectionWrapper } from "../hoc"
+import { fadeIn, textVariant } from "../utils/motion"
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -46,11 +47,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m a Computer Sceience undergrad with experience in JavaScript,
-        and expertise in frameworks like React and Node.js. I&apos;m a quick
-        learner and collaborate closely with my team members to create solutions
-        that solve real-world problems. Let&apos;s work together to bring your
-        ideas to life!
+        I&apos;m a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and
+        Three.js. I&apos;m a quick learner and collaborate closely with clients
+        to create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let&apos;s work together to bring your ideas to
+        life!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -65,4 +67,5 @@ const About = () => {
     </>
   )
 }
-export default About
+
+export default SectionWrapper(About, "about")
