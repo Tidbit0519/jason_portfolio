@@ -35,16 +35,20 @@ import {
       title: "Work",
     },
     {
+      id: "projects",
+      title: "Projects",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
   ];
   
   const services = [
-    {
-      title: "Front End Web Developer",
-      icon: web,
-    },
+    // {
+    //   title: "Front End Web Developer",
+    //   icon: web,
+    // },
     // {
     //   title: "React Native Developer",
     //   icon: mobile,
