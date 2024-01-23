@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -66,10 +66,11 @@ const Navbar = () => {
           />
         </div>
 
+        {/* MobileNav*/}
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6  black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          } p-6  bg-black/90 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
         >
           <ul className="list-none flex justify-end items-start flex-col gap-4">
             {navLinks.map((link) => (
@@ -89,8 +90,11 @@ const Navbar = () => {
             <li
               className={`${
                 active === "contact" ? "text-white" : "text-secondary"
-              } hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
-              onClick={() => setActive("contact")}
+              } bg-tertiary py-2 px-6 rounded-xl outline-none w-fit font-bold shadow-md shadow-primary hover:text-white font-poppins  cursor-pointer text-[16px]`}
+              onClick={() => {
+                setToggle(!toggle)
+                setActive("contact")
+              }}
             >
               <a href={"#contact"}>Contact</a>
             </li>

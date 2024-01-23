@@ -19,8 +19,8 @@ const App = () => {
         <StarsCanvas />
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
         </div>
+        <Hero />
         <About />
         <Experience />
         <Tech />
