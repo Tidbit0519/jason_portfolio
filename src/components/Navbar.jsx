@@ -25,9 +25,9 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-9 h-9 object-contain"
+            className="w-9 h-9 object-contain hover:scale-110 hover:transition-all"
           />
-          <p className="text-white text-[18px] font-bold text-xl cursor-pointer flex">
+          <p className="text-white text-[18px] font-bold text-xl cursor-pointer flex hover:scale-110 hover:transition-all">
             Jason&nbsp;
             <span className="sm:block hidden">
               {/* |
@@ -35,18 +35,26 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white hover:scale-110 hover:transition-all text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li
+            className={`${
+              active === "contact" ? "text-white" : "text-secondary"
+            }  bg-tertiary py-2 px-6 rounded-xl outline-none w-fit font-bold shadow-md shadow-primary hover:text-white hover:scale-110 hover:transition-all text-[18px] cursor-pointer`}
+            onClick={() => setActive("contact")}
+          >
+            <a href={"#contact"}>Contact</a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -69,7 +77,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title ? "text-white" : "text-secondary"
-                } font-poppins font-medium cursor-pointer text-[16px]`}
+                } hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
                   setToggle(!toggle)
                   setActive(link.title)
@@ -78,6 +86,14 @@ const Navbar = () => {
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
+            <li
+              className={`${
+                active === "contact" ? "text-white" : "text-secondary"
+              } hover:text-white font-poppins font-medium cursor-pointer text-[16px]`}
+              onClick={() => setActive("contact")}
+            >
+              <a href={"#contact"}>Contact</a>
+            </li>
           </ul>
         </div>
       </div>
