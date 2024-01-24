@@ -50,7 +50,7 @@ const Navbar = () => {
           <li
             className={`${
               active === "contact" ? "text-white" : "text-secondary"
-            }  bg-tertiary py-2 px-6 rounded-xl outline-none w-fit font-bold shadow-md shadow-primary hover:text-white hover:scale-110 hover:transition-all text-[18px] cursor-pointer`}
+            }  bg-violet-950 py-2 px-6 rounded-xl outline-none w-fit font-bold shadow-md shadow-primary hover:text-white hover:scale-110 hover:transition-all text-[18px] cursor-pointer`}
             onClick={() => setActive("contact")}
           >
             <a href={"#contact"}>Contact</a>

@@ -6,7 +6,7 @@ import { textVariant, fadeIn } from "../utils/motion"
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-[720px] mx-auto sm:mb-36 mb-8`}>
+    <section className={`relative w-full h-[720px] mx-auto sm:mb-72 mb-36`}>
       <div
         className={`inset-0 top-[120px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:mb-12 -mb-24`}
       >
@@ -27,7 +27,7 @@ const Hero = () => {
 
       <ProgrammerCanvas />
 
-      <div className="relative sm:bottom-48 bottom-24 w-full flex justify-center items-center">
+      <div className="sticky bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}

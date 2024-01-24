@@ -61,7 +61,6 @@ const ProgrammerCanvas = () => {
 
   return (
     <Canvas
-      className={isMobile && "-mt-12"}
       camera={{ position: [17.5, 0, 3], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
