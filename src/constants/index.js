@@ -1,28 +1,18 @@
+import { c } from "maath/dist/index-0332b2ed.esm";
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
+    csharp,
+    aspnetcore,
     starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
-    threejs,
   } from "../assets";
   
   export const navLinks = [
@@ -73,44 +63,28 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
     },
     {
       name: "Node JS",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "C#",
+      icon: csharp,
+    },
+    {
+      name: "ASP.NET Core",
+      icon: aspnetcore,
     },
   ];
   
