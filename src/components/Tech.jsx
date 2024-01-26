@@ -19,7 +19,7 @@ const Tech = () => {
       </p>
 
       <p
-        className={`${styles.sectionSubText} ${styles.minPaddingY} flex justify-center items-center`}
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
       >
         Front-End
       </p>
@@ -41,7 +41,7 @@ const Tech = () => {
       </div>
 
       <p
-        className={`${styles.sectionSubText} ${styles.minPaddingY} flex justify-center items-center`}
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
       >
         Back-End
       </p>
@@ -63,7 +63,7 @@ const Tech = () => {
       </div>
 
       <p
-        className={`${styles.sectionSubText} ${styles.minPaddingY} flex justify-center items-center`}
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
       >
         Others
       </p>
