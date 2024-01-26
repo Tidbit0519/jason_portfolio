@@ -6,25 +6,23 @@ import { textVariant, fadeIn } from "../utils/motion"
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-[720px] mx-auto sm:mb-72 mb-36`}>
+    <section className={`relative w-full h-[720px] mx-auto sm:mb-16 mb-8`}>
       <div
-        className={`inset-0 top-[120px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:mb-12 -mb-24`}
+        className={`absolute inset-0 top-[50px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:mb-12 -mb-24`}
       >
         <div className="flex flex-col justify-center items-center mt-5"></div>
         <div>
-          <motion.div variants={textVariant()}>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I&apos;m <span className="text-[#915eff]">Jason</span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop front-end in React,
-              <br className="sm:block-hidden" />
-              and aspiring to be a full stack developer.
-            </p>
-          </motion.div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I&apos;m <span className="text-[#915eff]">Jason</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I develop front-end in React,
+            <br className="sm:block-hidden" />
+            and aspiring to be a full stack developer.
+          </p>
         </div>
       </div>
-
+      
       <ProgrammerCanvas />
 
       <div className="sticky bottom-12 w-full flex justify-center items-center">

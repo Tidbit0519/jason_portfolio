@@ -7,17 +7,21 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
+import css from "./tech/css.png";
 import javascript from "./tech/javascript.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 
+import nodejs from "./tech/nodejs.png";
 import csharp from "./tech/csharp.svg";
 import aspnetcore from "./tech/aspnetcore.png";
+import mysql from "./tech/mysql.png";
+
+import unity from "./tech/unity.png";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -37,17 +41,22 @@ export {
   github,
   menu,
   close,
-  css,
-  git,
+  
   html,
+  css,
   javascript,
-  nodejs,
   reactjs,
   tailwind,
   threejs,
 
+  nodejs,
   csharp,
   aspnetcore,
+  mysql,
+
+  unity,
+  java,
+  python,
 
   meta,
   shopify,

@@ -1,14 +1,21 @@
 import { c } from "maath/dist/index-0332b2ed.esm";
 import {
-    javascript,
     html,
     css,
+    javascript,
     reactjs,
     tailwind,
+    threejs,
+  
     nodejs,
-    git,
     csharp,
     aspnetcore,
+    mysql,
+    
+    unity,
+    java,
+    python,
+    
     starbucks,
     carrent,
     jobit,
@@ -49,7 +56,7 @@ import {
     // },
   ];
   
-  const technologies = [
+  const frontend = [
     {
       name: "HTML 5",
       icon: html,
@@ -67,26 +74,49 @@ import {
       icon: reactjs,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
     {
-      name: "C#",
-      icon: csharp,
+      name: "Three JS",
+      icon: threejs,
     },
-    {
-      name: "ASP.NET Core",
-      icon: aspnetcore,
-    },
-  ];
+];
+  
+const backend = [
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: "ASP.NET Core",
+    icon: aspnetcore,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+];
+
+const others = [
+  {
+    name: "Unity",
+    icon: unity,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+];
+      
   
   const experiences = [
     {
@@ -197,4 +227,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, frontend, backend, others, experiences, testimonials, projects };

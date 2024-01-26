@@ -19,6 +19,22 @@
   display: block;
 }
 
+.block-container {
+  position: relative;
+}
+
+.block-container .btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: #ffffff66;
+  transition: 250ms;
+}
+
+.block-container:hover>.btn-front {
+  transform: scale(1.2);
+}
+
 .black-gradient {
   background: #000000;
   /* fallback for old browsers */

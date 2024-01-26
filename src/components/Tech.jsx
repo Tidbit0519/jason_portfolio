@@ -6,26 +6,80 @@ import { styles } from "../styles"
 
 import { BallCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
-import { technologies } from "../constants"
+import { frontend, backend, others } from "../constants"
 
 const Tech = () => {
   return (
     <motion.div
       variants={textVariant()}
-      className="-mt-8"
+      className="-mt-16"
     >
-      <p
-        className="flex justify-center items-center text-white text-[24px] font-bold"
-      >
+      <p className="flex justify-center items-center text-white text-[24px] font-bold">
         My Skills
       </p>
-      <div className={`${styles.paddingY} flex flex-row flex-wrap justify-center gap-10`}>
-        {technologies.map((technology) => (
+
+      <p
+        className={`${styles.sectionSubText} ${styles.minPaddingY} flex justify-center items-center`}
+      >
+        Front-End
+      </p>
+      <div className="flex flex-wrap gap-12 justify-center items-center">
+        {frontend.map((skill) => (
           <div
-            className="sm:w-28 sm:h-28 w-20 h-24"
-            key={technology.name}
+            className="block-container w-20 h-20"
+            key={skill.name}
           >
-            <BallCanvas icon={technology.icon} />
+            <div className="btn-front rounded-3xl flex justify-center items-center">
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-3/4 h-3/4 object-contain"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p
+        className={`${styles.sectionSubText} ${styles.minPaddingY} flex justify-center items-center`}
+      >
+        Back-End
+      </p>
+      <div className="flex flex-wrap gap-12 justify-center items-center">
+        {backend.map((skill) => (
+          <div
+            className="block-container w-20 h-20"
+            key={skill.name}
+          >
+            <div className="btn-front rounded-3xl flex justify-center items-center">
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-3/4 h-3/4 object-contain"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p
+        className={`${styles.sectionSubText} ${styles.minPaddingY} flex justify-center items-center`}
+      >
+        Others
+      </p>
+      <div className="flex flex-wrap gap-12 justify-center items-center">
+        {others.map((skill) => (
+          <div
+            className="block-container w-20 h-20"
+            key={skill.name}
+          >
+            <div className="btn-front rounded-3xl flex justify-center items-center">
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-3/4 h-3/4 object-contain"
+              />
+            </div>
           </div>
         ))}
       </div>
