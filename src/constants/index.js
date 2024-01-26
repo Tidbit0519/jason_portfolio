@@ -24,8 +24,10 @@ import {
   carrent,
   jobit,
   tripguide,
+
+  spencer,
 } from "../assets";
-  
+
   export const navLinks = [
     {
       id: "about",
@@ -140,7 +142,7 @@ const experiences = [
     ],
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Front-End Developer Intern",
     company_name: "FamilySearch",
     icon: familysearch,
     iconBg: "#383E56",
@@ -168,29 +170,31 @@ const experiences = [
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Jason displayed a remarkable ability to swiftly master React and related technologies and consistently delivering high-quality work.",
+      name: "Spencer Memmott",
+      designation: "Full Stack Engineer",
+      company: "FamilySearch",
+      image: spencer,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "I have had the pleasure of working with Jason on the in-house software development project at the EIS department at BYUH. He is very thorough in everything he does and can be depended upon to get the job done.",
+      name: "Takeyoshi Nitta",
+      designation: "Industry Process Consultant",
+      company: "Dassault Systèmes",
+      image:
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/222579565_2030568587100577_6918724366645412830_n.jpg?stp=dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Qx5mdIhqzpAAX-6PEqE&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=q&oh=00_AfAe7In-KydyIcQqdGfSDLqFHAUiwBIBTWvoRCa6fy6bsg&oe=65B949EE",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "I can attest that Jason is a brilliant problem-solver, multi-tasker, and team player. He is resilient when it comes to overcoming challenges and staying on top of his assignments.",
+      name: "Sheryl Tania",
+      designation: "Product Engineer",
+      company: "Esri",
+      image:
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/244548761_4283056571789949_1967614878201690525_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=lY4Ppfkwp6sAX95l4Lb&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=q&oh=00_AfBU6TwjVouQKlPmePKcGxBpB2LUW5n6LM8kjk_KjoSMDA&oe=65B833F3",
     },
-  ];
+  ]
   
   const projects = [
     {
