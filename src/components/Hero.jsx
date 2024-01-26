@@ -6,9 +6,9 @@ import { textVariant, fadeIn } from "../utils/motion"
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-[720px] mx-auto sm:mb-16 mb-8`}>
+    <section className={`relative w-full h-[720px] mx-auto sm:mb-16`}>
       <div
-        className={`absolute inset-0 top-[50px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:mb-12 -mb-24`}
+        className={`absolute inset-0 top-[50px] max-w-full mx-auto ${styles.paddingX} flex flex-row items-start gap-5 sm:mb-12`}
       >
         <div className="flex flex-col justify-center items-center mt-5"></div>
         <div>
@@ -25,7 +25,7 @@ const Hero = () => {
       
       <ProgrammerCanvas />
 
-      <div className="sticky bottom-12 w-full flex justify-center items-center">
+      <div className="sm:sticky relative sm:bottom-12 bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
