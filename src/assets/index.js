@@ -19,14 +19,14 @@ import csharp from "./tech/csharp.svg";
 import aspnetcore from "./tech/aspnetcore.png";
 import mysql from "./tech/mysql.png";
 
+import git from "./tech/git.png";
 import unity from "./tech/unity.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import familysearch from "./familysearch.png";
+import byuhawaii from "./byuhawaii.png";
+import imi from "./imi.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -54,14 +54,15 @@ export {
   aspnetcore,
   mysql,
 
+  git,
   unity,
   java,
   python,
 
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  familysearch,
+  byuhawaii,
+  imi,
+  
   carrent,
   jobit,
   tripguide,

@@ -1,26 +1,30 @@
 import { c } from "maath/dist/index-0332b2ed.esm";
 import {
-    html,
-    css,
-    javascript,
-    reactjs,
-    tailwind,
-    threejs,
+  html,
+  css,
+  javascript,
+  reactjs,
+  tailwind,
+  threejs,
+
+  nodejs,
+  csharp,
+  aspnetcore,
+  mysql,
   
-    nodejs,
-    csharp,
-    aspnetcore,
-    mysql,
-    
-    unity,
-    java,
-    python,
-    
-    starbucks,
-    carrent,
-    jobit,
-    tripguide,
-  } from "../assets";
+  git,
+  unity,
+  java,
+  python,
+  
+  familysearch,
+  byuhawaii,
+  imi,
+
+  carrent,
+  jobit,
+  tripguide,
+} from "../assets";
   
   export const navLinks = [
     {
@@ -104,6 +108,10 @@ const backend = [
 
 const others = [
   {
+    name: "Git",
+    icon: git,
+  },
+  {
     name: "Unity",
     icon: unity,
   },
@@ -118,21 +126,44 @@ const others = [
 ];
       
   
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
+const experiences = [
+  {
+    title: "EIS Student Developer/Analyst",
+    company_name: "Brigham Young University-Hawaii",
+    icon: byuhawaii,
+    iconBg: "#383E56",
+    date: "May 2022 - Current",
+    points: [
+      "Developed and maintained APIs using ASP.NET Core to manage test records for a student population of approximately 3000 at BYU-Hawaii's Testing Center App",
+      "Assisted full-time developers in maintaining the frontend of 10 web applications using a low-code platform, Mendix.",
+      "Created a frontend starter app template and reduced an estimated development time by 20%",
+    ],
+  },
+  {
+    title: "Frontend Developer Intern",
+    company_name: "FamilySearch",
+    icon: familysearch,
+    iconBg: "#383E56",
+    date: "June 2023 - September 2023",
+    points: [
+      "Developed a React-based transliterator prototype for an ancient Filipino script, Baybayin.",
+      "Prototyped dynamic rendering of PDF documents within web pages using react-pdf and the Adobe PDF Embed API.",
+      "Adhered to DevOps best practices and achieve 100% code coverage in unit testing.",
+      "Collaborated with UX/UI designers to implement culturally-influenced widgets to resonate with target audiences.",
+    ],
+  },
+  {
+    title: "Project Manager Intern",
+    company_name: "Integrated Micro-Electronics, Inc. (IMI Global)",
+    icon: imi,
+    iconBg: "#383E56",
+    date: "January 2022 - April 2022",
+    points: [
+      "Pioneered an international internship collaboration between the company and the university in a team of 5 students and achieving a 100% deliverables rate despite a 17-hour timezone difference.",
+      "Prototyped a CRUD web application using XAMP stack to audit over 17,000 employees’ training records.",
+    ],
+  },
+]
   
   const testimonials = [
     {
