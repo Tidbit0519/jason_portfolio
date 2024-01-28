@@ -21,11 +21,11 @@ import {
   byuhawaii,
   imi,
 
-  carrent,
-  jobit,
-  tripguide,
-
   spencer,
+
+  carrent,
+  ezvending,
+  imiproject,
 } from "../assets";
 
   export const navLinks = [
@@ -219,47 +219,60 @@ const experiences = [
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "IMI Training Records Automation",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Integrated Micro-Electronics, Inc. is a manufacturing company with over 20000 employees from 10 countries. The company was in need of a platform and database to automate the training records of its onboarding employees. This is a prototype web application using XAMP stack that can create, read, update, and delete training records of IMI employees.",
       tags: [
         {
-          name: "react",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Bootstrap",
           color: "pink-text-gradient",
         },
+        {
+          name: "PHP",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "yellow-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: imiproject,
+      source_code_link:
+        "https://www.global-imi.com/index.php/news/imi-and-byu-hawaii-collaborate-first-campus-online-internship-program",
     },
     {
-      name: "Trip Guide",
+      name: "EZ Vending",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "EzVending is a Node.js program that helps BYU users to locate the nearest vending machines to their current building locations. The program can also recommend snacks based on their desired vending category and budget, and stores their favorite snacks along with purchase dates which they can retrieve to view or delete later.",
       tags: [
         {
-          name: "nextjs",
+          name: "JavaScript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Node.js",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "AWS",
           color: "pink-text-gradient",
         },
+        {
+          name: "Oracle DB",
+          color: "orange-text-gradient",
+        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: ezvending,
+      source_code_link: "https://github.com/Tidbit0519/EzVending",
     },
-  ];
+  ]
   
   export { services, frontend, backend, others, experiences, testimonials, projects };
