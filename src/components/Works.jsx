@@ -3,9 +3,9 @@ import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 
 import { styles } from "../styles"
-import { github } from "../assets"
+import { github, external } from "../assets"
 import { SectionWrapper } from "../hoc"
-import { projects } from "../constants"
+import { gameProjects, webProjects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
 const ProjectCard = ({
@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  link_type,
   source_code_link,
 }) => {
   return (
@@ -35,10 +36,10 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={link_type == "github"? github : external}
                 alt="github"
                 className="w-1/2 h-1/2object-contain"
               />
@@ -53,7 +54,10 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p
+              key={tag.name}
+              className={`text-[14px] ${tag.color}`}
+            >
               #{tag.name}
             </p>
           ))}
@@ -84,8 +88,28 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+      <p
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
+      >
+        Web Development
+      </p>
+      <div className="flex flex-wrap gap-7">
+        {webProjects.map((project, index) => (
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
+      </div>
+
+      <p
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
+      >
+        Game Development
+      </p>
+      <div className="flex flex-wrap gap-7">
+        {gameProjects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}

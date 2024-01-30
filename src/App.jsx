@@ -1,3 +1,4 @@
+import React from "react"
 import { BrowserRouter } from "react-router-dom"
 
 import {
@@ -12,6 +13,7 @@ import {
   StarsCanvas,
 } from "./components"
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +22,7 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+
         <About />
         <Tech />
         <Experience />

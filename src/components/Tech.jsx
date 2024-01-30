@@ -4,7 +4,6 @@ import { textVariant } from "../utils/motion"
 
 import { styles } from "../styles"
 
-import { BallCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { frontend, backend, others } from "../constants"
 

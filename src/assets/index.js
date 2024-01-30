@@ -1,5 +1,6 @@
 import logo from "./logo.png";
 import github from "./github.png";
+import external from "./external.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -24,15 +25,19 @@ import familysearch from "./familysearch.png";
 import byuhawaii from "./byuhawaii.png";
 import imi from "./imi.png";
 
-import carrent from "./carrent.png";
+import favcolor from "./favcolor.png";
 import ezvending from "./ezvending.png";
 import imiproject from "./imiproject.png";
+
+import gladiadog from "./gladiadog.png";
+import battleship from "./battleship.png";
 
 import spencer from "./testimonials/spencer.jpeg";
 
 export {
   logo,
   github,
+  external,
   menu,
   close,
   
@@ -57,9 +62,12 @@ export {
   byuhawaii,
   imi,
   
-  carrent,
+  favcolor,
   ezvending,
   imiproject,
+
+  gladiadog,
+  battleship,
 
   spencer,
 };

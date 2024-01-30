@@ -20,12 +20,15 @@ import {
   familysearch,
   byuhawaii,
   imi,
-
-  spencer,
-
-  carrent,
+  
+  favcolor,
   ezvending,
   imiproject,
+  
+  gladiadog,
+  battleship,
+  
+  spencer,
 } from "../assets";
 
   export const navLinks = [
@@ -166,113 +169,174 @@ const experiences = [
     ],
   },
 ]
+
+
   
-  const testimonials = [
-    {
-      testimonial:
-        "Jason displayed a remarkable ability to swiftly master React and related technologies and consistently delivering high-quality work.",
-      name: "Spencer Memmott",
-      designation: "Full Stack Engineer",
-      company: "FamilySearch",
-      image: spencer,
-    },
-    {
-      testimonial:
-        "I have had the pleasure of working with Jason on the in-house software development project at the EIS department at BYUH. He is very thorough in everything he does and can be depended upon to get the job done.",
-      name: "Takeyoshi Nitta",
-      designation: "Industry Process Consultant",
-      company: "Dassault Systèmes",
-      image:
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/222579565_2030568587100577_6918724366645412830_n.jpg?stp=dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Qx5mdIhqzpAAX-6PEqE&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=q&oh=00_AfAe7In-KydyIcQqdGfSDLqFHAUiwBIBTWvoRCa6fy6bsg&oe=65B949EE",
-    },
-    {
-      testimonial:
-        "I can attest that Jason is a brilliant problem-solver, multi-tasker, and team player. He is resilient when it comes to overcoming challenges and staying on top of his assignments.",
-      name: "Sheryl Tania",
-      designation: "Product Engineer",
-      company: "Esri",
-      image:
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/244548761_4283056571789949_1967614878201690525_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=lY4Ppfkwp6sAX95l4Lb&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=q&oh=00_AfBU6TwjVouQKlPmePKcGxBpB2LUW5n6LM8kjk_KjoSMDA&oe=65B833F3",
-    },
-  ]
+const testimonials = [
+  {
+    testimonial:
+      "Jason displayed a remarkable ability to swiftly master React and related technologies and consistently delivering high-quality work.",
+    name: "Spencer Memmott",
+    designation: "Full Stack Engineer",
+    company: "FamilySearch",
+    image: spencer,
+  },
+  {
+    testimonial:
+      "I have had the pleasure of working with Jason on the in-house software development project at the EIS department at BYUH. He is very thorough in everything he does and can be depended upon to get the job done.",
+    name: "Takeyoshi Nitta",
+    designation: "Industry Process Consultant",
+    company: "Dassault Systèmes",
+    image:
+      "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/222579565_2030568587100577_6918724366645412830_n.jpg?stp=dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Qx5mdIhqzpAAX-6PEqE&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=q&oh=00_AfAe7In-KydyIcQqdGfSDLqFHAUiwBIBTWvoRCa6fy6bsg&oe=65B949EE",
+  },
+  {
+    testimonial:
+      "I can attest that Jason is a brilliant problem-solver, multi-tasker, and team player. He is resilient when it comes to overcoming challenges and staying on top of his assignments.",
+    name: "Sheryl Tania",
+    designation: "Product Engineer",
+    company: "Esri",
+    image:
+      "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/244548761_4283056571789949_1967614878201690525_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=lY4Ppfkwp6sAX95l4Lb&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=q&oh=00_AfBU6TwjVouQKlPmePKcGxBpB2LUW5n6LM8kjk_KjoSMDA&oe=65B833F3",
+  },
+]
+
+const webProjects = [
+  {
+    name: "Favorite Color Website",
+    description:
+      "A simple fullstack web app created using BYU's Nuxt template that adds, deletes, and edits the information of a person's favorite color.",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vue.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Terraform",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "DynamoDB",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: favcolor,
+    link_type: "github",
+    source_code_link: "https://github.com/Tidbit0519/jtbt2-fav-color-ui",
+  },
+  {
+    name: "EZ Vending",
+    description:
+      "A console program that helps BYU users to locate the nearest vending machines to their current building locations, and also recommend snacks based on their desired vending category and budget, and stores their favorite snacks along with purchase dates which they can retrieve to view or delete later.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Oracle DB",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: ezvending,
+    link_type: "github",
+    source_code_link: "https://github.com/Tidbit0519/EzVending",
+  },
+  {
+    name: "IMI Training Records Automation",
+    description:
+      "A prototype web application using XAMP stack that can create, read, update, and delete training records of IMI employees.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: imiproject,
+    link_type: "external",
+    source_code_link:
+      "https://www.global-imi.com/index.php/news/imi-and-byu-hawaii-collaborate-first-campus-online-internship-program",
+  },
+]
+
+const gameProjects = [
+  {
+    name: "Battleship",
+    description:
+      "A simple 2D android mobile game where user control a battleship on the center of the screen and shoots any incoming airplanes and submarines to get the highest possible score within the time limit.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Android Studio",
+        color: "green-text-gradient",
+      },
+    ],
+    image: battleship,
+    link_type: "github",
+    source_code_link: "https://github.com/Tidbit0519/battleship-game",
+  },
+  {
+    name: "Gladiadog",
+    description:
+      "An action arcade game where the player controls a dog swordsman and defeats a giant slime in a gladiator arena! There a re a total of 3 rounds, and only the best time is saved! The game is developed as part of my college's Unity game project, and it is still a prototype. Feel free to leave a feedback!",
+    tags: [
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Unity",
+        color: "green-text-gradient",
+      },
+    ],
+    image: gladiadog,
+    link_type: "external",
+    source_code_link: "https://tibit0519.itch.io/gladiadog",
+  },
+]
   
-  const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "IMI Training Records Automation",
-      description:
-        "Integrated Micro-Electronics, Inc. is a manufacturing company with over 20000 employees from 10 countries. The company was in need of a platform and database to automate the training records of its onboarding employees. This is a prototype web application using XAMP stack that can create, read, update, and delete training records of IMI employees.",
-      tags: [
-        {
-          name: "HTML",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Bootstrap",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "PHP",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "MySQL",
-          color: "yellow-text-gradient",
-        },
-      ],
-      image: imiproject,
-      source_code_link:
-        "https://www.global-imi.com/index.php/news/imi-and-byu-hawaii-collaborate-first-campus-online-internship-program",
-    },
-    {
-      name: "EZ Vending",
-      description:
-        "EzVending is a Node.js program that helps BYU users to locate the nearest vending machines to their current building locations. The program can also recommend snacks based on their desired vending category and budget, and stores their favorite snacks along with purchase dates which they can retrieve to view or delete later.",
-      tags: [
-        {
-          name: "JavaScript",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Node.js",
-          color: "green-text-gradient",
-        },
-        {
-          name: "AWS",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Oracle DB",
-          color: "orange-text-gradient",
-        },
-      ],
-      image: ezvending,
-      source_code_link: "https://github.com/Tidbit0519/EzVending",
-    },
-  ]
-  
-  export { services, frontend, backend, others, experiences, testimonials, projects };
+export {
+  services,
+  frontend,
+  backend,
+  others,
+  experiences,
+  webProjects,
+  gameProjects,
+  testimonials,
+}
