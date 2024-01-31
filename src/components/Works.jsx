@@ -67,58 +67,48 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
+      <p className={`${styles.sectionSubText} text-center`}>My work</p>
+      <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
 
-        <div className="w-full flex">
-          <div className="mt-3 text-secondary text-[17px] max-w-3xl leading=[30px]">
-            Following projects showcases my skills and experience through
-            real-world examples of my work. Each project is briefly described
-            with links to code repositories and live demos in it. It reflects my
-            ability to solve complex problems, work with different technologies,
-            and manage projects effectively.
-          </div>
+      <div className="w-full flex">
+        <div className="mt-3 text-secondary text-[17px] max-w-3xl leading=[30px]">
+          Following projects showcases my skills and experience through
+          real-world examples of my work. Each project is briefly described
+          with links to code repositories and live demos in it. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={fadeIn("up", "spring", 0.75)}
+      <p
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
       >
-        <p
-          className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
-        >
-          Web Development
-        </p>
-        <div className="flex flex-wrap gap-7">
-          {webProjects.map((project, index) => (
-            <ProjectCard
-              key={`project-${index}`}
-              index={index}
-              {...project}
-            />
-          ))}
-        </div>
-      </motion.div>
+        Web Development
+      </p>
+      <div className="flex flex-wrap gap-7">
+        {webProjects.map((project, index) => (
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
+      </div>
 
-      <motion.div
-        variants={fadeIn("up", "spring", 0.75)}
+      <p
+        className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
       >
-        <p
-          className={`${styles.sectionSubText} ${styles.paddingY} flex justify-center items-center`}
-        >
-          Game Development
-        </p>
-        <div className="flex flex-wrap gap-7">
-          {gameProjects.map((project, index) => (
-            <ProjectCard
-              key={`project-${index}`}
-              index={index}
-              {...project}
-            />
-          ))}
-        </div>
-      </motion.div>
+        Game Development
+      </p>
+      <div className="flex flex-wrap gap-7">
+        {gameProjects.map((project, index) => (
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
+      </div>
     </>
   )
 }
