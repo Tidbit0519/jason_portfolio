@@ -17,6 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
+    <motion.div variants={fadeIn("", "", 0.1, 1)}>
       <Tilt
         options={{
           max: 45,
@@ -37,7 +38,7 @@ const ProjectCard = ({
               className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={link_type == "github"? github : external}
+                src={link_type == "github" ? github : external}
                 alt="github"
                 className="w-1/2 h-1/2object-contain"
               />
@@ -61,6 +62,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
+    </motion.div>
   )
 }
 
