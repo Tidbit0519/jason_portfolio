@@ -6,7 +6,7 @@ import { styles } from "../styles"
 import { github, external } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { gameProjects, webProjects } from "../constants"
-import { fadeIn, textVariant } from "../utils/motion"
+import { slideIn, textVariant } from "../utils/motion"
 
 const ProjectCard = ({
   name,
@@ -18,8 +18,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      variants={slideIn("up", "spring", 0.1, 1)}
     >
       <Tilt
         options={{
