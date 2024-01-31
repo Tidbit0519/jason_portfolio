@@ -17,7 +17,10 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("", "", 0.1, 1)}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Tilt
         options={{
           max: 45,
