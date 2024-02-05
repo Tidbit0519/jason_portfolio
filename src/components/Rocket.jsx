@@ -1,14 +1,21 @@
 import React, { useEffect, useRef, useState } from "react"
+import { Tooltip } from "react-tooltip"
 import { rocket } from "../assets"
 
 const offset = 65
 
 const Rocket = () => {
   const rocketRef = useRef(null)
+
   const [rotation, setRotation] = useState(0)
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [pointerX, setPointerX] = useState(0)
-  const [pointerY, setPointerY] = useState(0)
+  const [position, setPosition] = useState({
+    left: window.innerWidth * 0.75,
+    top: window.innerHeight * 0.25,
+  })
+  const [positionDrag, setPositionDrag] = useState({
+    left: window.innerWidth / 0.75,
+    top: window.innerHeight * 0.25,
+  })
 
   const updateRotation = (event) => {
     const posX =
@@ -22,57 +29,79 @@ const Rocket = () => {
 
     const rad = Math.atan2(posY, posX)
     const deg = rad * (180 / Math.PI) + 180 - offset
+
     setRotation(deg)
   }
 
   const updatePosition = (event) => {
-    const newPointerX = event.clientX - rocketRef.current.width / 2
-    const newPointerY = event.clientY - rocketRef.current.height / 2
+    setPosition({
+      left: event.clientX - rocketRef.current.width / 2 + window.scrollX,
+      top: event.clientY - rocketRef.current.height / 2 + window.scrollY,
+    })
 
-    setPointerX(newPointerX)
-    setPointerY(newPointerY)
-
-    setPosition({ x: newPointerX, y: newPointerY })
-  }
-
-  const animateRocket = () => {
-    // Update the position using requestAnimationFrame for smooth animation
-    setPosition((prevPosition) => ({
-      x: prevPosition.x + (pointerX - prevPosition.x) / 15,
-      y: prevPosition.y + (pointerY - prevPosition.y) / 15,
-    }))
-
-    // Call the animateRocket function on the next animation frame
-    requestAnimationFrame(animateRocket)
+    console.log("Mouse click: ", event.clientX, event.clientY)
+    console.log(position)
   }
 
   useEffect(() => {
     window.addEventListener("pointermove", updateRotation)
+    window.addEventListener("pointerdown", updateRotation)
     window.addEventListener("pointerdown", updatePosition)
-    animateRocket() // Start the animation loop
 
     return () => {
       window.removeEventListener("pointermove", updateRotation)
-      window.removeEventListener("mousedown", updatePosition)
+      window.addEventListener("pointerdown", updateRotation)
+      window.removeEventListener("pointerdown", updatePosition)
     }
-  }, [pointerX, pointerY])
+  }, [])
+
+  useEffect(() => {
+    let request
+
+    const animateRocket = () => {
+      setPositionDrag((prevPositionDrag) => ({
+        left:
+          prevPositionDrag.left + (position.left - prevPositionDrag.left) / 15,
+        top: prevPositionDrag.top + (position.top - prevPositionDrag.top) / 15,
+      }))
+
+      request = requestAnimationFrame(animateRocket)
+    }
+
+    animateRocket()
+    console.log(position)
+
+    return () => {
+      cancelAnimationFrame(request)
+    }
+  }, [position])
+
 
   return (
-    <div className="rocket-move-area">
+    <>
+      <Tooltip
+        className="z-50"
+        anchorSelect="#rocket"
+        content="Move me!"
+        defaultIsOpen="true"
+        openOnClick="true"
+        offset={-10}
+      />
       <img
-        className="rocket"
+        id="rocket"
+        className="absolute w-[100px] z-50"
         ref={rocketRef}
         src={rocket}
         alt="Rocket"
         style={{
           transform: `rotate(${rotation}deg)`,
-          width: "100px",
-          left: position.x + "px",
-          top: position.y + "px",
-          transition: "0.3s",
+          left: `${positionDrag.left}px`,
+          top: `${positionDrag.top}px`,
         }}
+        data-tooltip-variant="dark"
+        data-tooltip-place="left"
       />
-    </div>
+    </>
   )
 }
 
