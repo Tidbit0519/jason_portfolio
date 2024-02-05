@@ -34,6 +34,8 @@ import battleship from "./battleship.png";
 
 import spencer from "./testimonials/spencer.jpeg";
 
+import rocket from "./rocket.gif";
+
 export {
   logo,
   github,
@@ -70,4 +72,6 @@ export {
   battleship,
 
   spencer,
+
+  rocket,
 };

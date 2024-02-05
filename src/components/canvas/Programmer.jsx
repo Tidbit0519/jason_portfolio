@@ -12,7 +12,7 @@ const Programmer = ({ isMobile }) => {
       <Sparkles
         count={isMobile? 50 : 100}
         color="violet"
-        scale={isMobile? 3.6 : 5}
+        scale={isMobile? 3.6 : 7.2}
         size={isMobile? 7.5 : 10}
         speed={0.5}
         position={[0, 0, 0]}
@@ -39,21 +39,15 @@ const ProgrammerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)")
-
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches)
 
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches)
     }
 
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange)
 
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange)
     }
@@ -67,6 +61,7 @@ const ProgrammerCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
         />
         <Programmer isMobile={isMobile} />
       </Suspense>
