@@ -38,9 +38,6 @@ const Rocket = () => {
       left: event.clientX - rocketRef.current.width / 2 + window.scrollX,
       top: event.clientY - rocketRef.current.height / 2 + window.scrollY,
     })
-
-    console.log("Mouse click: ", event.clientX, event.clientY)
-    console.log(position)
   }
 
   useEffect(() => {
@@ -69,7 +66,6 @@ const Rocket = () => {
     }
 
     animateRocket()
-    console.log(position)
 
     return () => {
       cancelAnimationFrame(request)
