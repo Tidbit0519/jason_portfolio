@@ -1,6 +1,4 @@
 import logo from "./logo.png";
-import github from "./github.png";
-import external from "./external.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -21,18 +19,23 @@ import unity from "./tech/unity.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
 
-import familysearch from "./familysearch.png";
-import byuhawaii from "./byuhawaii.png";
-import imi from "./imi.png";
+import familysearch from "./experience/familysearch.png";
+import byuhawaii from "./experience/byuhawaii.png"
+import imi from "./experience/imi.png"
 
-import favcolor from "./favcolor.png";
-import ezvending from "./ezvending.png";
-import imiproject from "./imiproject.png";
+import github from "./project/github.png";
+import external from "./project/external.png";
 
-import gladiadog from "./gladiadog.png";
-import battleship from "./battleship.png";
+import favcolor from "./project/favcolor.png";
+import ezvending from "./project/ezvending.png"
+import imiproject from "./project/imiproject.png"
+
+import gladiadog from "./project/gladiadog.png"
+import battleship from "./project/battleship.png"
 
 import spencer from "./testimonials/spencer.jpeg";
+import takeyoshi from "./testimonials/takeyoshi.jfif";
+import sheryl from "./testimonials/sheryl.jfif"
 
 import rocket from "./rocket.gif";
 
@@ -72,6 +75,8 @@ export {
   battleship,
 
   spencer,
+  takeyoshi,
+  sheryl,
 
   rocket,
 };

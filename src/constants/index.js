@@ -29,6 +29,8 @@ import {
   battleship,
   
   spencer,
+  takeyoshi,
+  sheryl
 } from "../assets";
 
   export const navLinks = [
@@ -44,25 +46,6 @@ import {
       id: "projects",
       title: "Projects",
     },
-  ];
-  
-  const services = [
-    // {
-    //   title: "Front End Web Developer",
-    //   icon: web,
-    // },
-    // {
-    //   title: "React Native Developer",
-    //   icon: mobile,
-    // },
-    // {
-    //   title: "Backend Developer",
-    //   icon: backend,
-    // },
-    // {
-    //   title: "Content Creator",
-    //   icon: creator,
-    // },
   ];
   
   const frontend = [
@@ -187,8 +170,7 @@ const testimonials = [
     name: "Takeyoshi Nitta",
     designation: "Industry Process Consultant",
     company: "Dassault Systèmes",
-    image:
-      "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-1/222579565_2030568587100577_6918724366645412830_n.jpg?stp=dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Qx5mdIhqzpAAX-6PEqE&_nc_ht=scontent-lax3-1.xx&cb_e2o_trans=q&oh=00_AfAe7In-KydyIcQqdGfSDLqFHAUiwBIBTWvoRCa6fy6bsg&oe=65B949EE",
+    image: takeyoshi,
   },
   {
     testimonial:
@@ -196,8 +178,7 @@ const testimonials = [
     name: "Sheryl Tania",
     designation: "Product Engineer",
     company: "Esri",
-    image:
-      "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/244548761_4283056571789949_1967614878201690525_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=lY4Ppfkwp6sAX95l4Lb&_nc_ht=scontent-lax3-2.xx&cb_e2o_trans=q&oh=00_AfBU6TwjVouQKlPmePKcGxBpB2LUW5n6LM8kjk_KjoSMDA&oe=65B833F3",
+    image: sheryl,
   },
 ]
 
@@ -331,7 +312,6 @@ const gameProjects = [
 ]
   
 export {
-  services,
   frontend,
   backend,
   others,
