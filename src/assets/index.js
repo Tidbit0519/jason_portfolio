@@ -26,6 +26,7 @@ import imi from "./experience/imi.png"
 import github from "./project/github.png";
 import external from "./project/external.png";
 
+import hidelivery from "./project/hidelivery.png";
 import favcolor from "./project/favcolor.png";
 import ezvending from "./project/ezvending.png"
 import imiproject from "./project/imiproject.png"
@@ -67,6 +68,7 @@ export {
   byuhawaii,
   imi,
   
+  hidelivery,
   favcolor,
   ezvending,
   imiproject,
