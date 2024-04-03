@@ -21,6 +21,7 @@ import {
   byuhawaii,
   imi,
   
+  hidelivery,
   favcolor,
   ezvending,
   imiproject,
@@ -183,6 +184,31 @@ const testimonials = [
 ]
 
 const webProjects = [
+  {
+    name: "HI Delivery",
+    description: "A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo was showcased at BYU-Hawaii's Empower Your Dreams 2024 semifinals.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Google Maps API",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Stripe API",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: hidelivery,
+    link_type: "external",
+    source_code_link: "https://hidelivery.app/",
+  },
   {
     name: "Favorite Color Website",
     description:
