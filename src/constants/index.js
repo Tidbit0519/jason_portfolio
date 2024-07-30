@@ -178,119 +178,158 @@ const testimonials = [
 ]
 
 const webProjects = [
-  {
-    name: "HI Delivery",
-    description: "A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo was showcased at BYU-Hawaii's Empower Your Dreams 2024 semifinals.",
-    tags: [
-      {
-        name: "React.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MUI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Google Maps API",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Stripe API",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: hidelivery,
-    link_type: "external",
-    source_code_link: "https://hidelivery.app/",
-  },
-  {
-    name: "Favorite Color Website",
-    description:
-      "A simple fullstack web app created using BYU's Nuxt template that adds, deletes, and edits the information of a person's favorite color.",
-    tags: [
-      {
-        name: "TypeScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vue.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Docker",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Terraform",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "DynamoDB",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: favcolor,
-    link_type: "github",
-    source_code_link: "https://github.com/Tidbit0519/jtbt2-fav-color-ui",
-  },
-  {
-    name: "EZ Vending",
-    description:
-      "A console program that helps BYU users to locate the nearest vending machines to their current building locations, and also recommend snacks based on their desired vending category and budget, and stores their favorite snacks along with purchase dates which they can retrieve to view or delete later.",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
+	{
+		name: "Canvas Feeder AI",
+		description:
+			"A fullstack web application that uses OpenAI's generative AI and Canvas LMS API to provide feedback on students' assignments and submissions. Coming Soon",
+		tags: [
+			{
+				name: "React.js",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Tailwind CSS",
+				color: "green-text-gradient",
       },
       {
         name: "Node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "AWS",
         color: "pink-text-gradient",
       },
       {
-        name: "Oracle DB",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: ezvending,
-    link_type: "github",
-    source_code_link: "https://github.com/Tidbit0519/EzVending",
-  },
-  {
-    name: "IMI Training Records Automation",
-    description:
-      "A prototype web application using XAMP stack that can create, read, update, and delete training records of IMI employees.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
+        name: "Express.js",
         color: "orange-text-gradient",
       },
       {
-        name: "MySQL",
+        name: "MongoDB",
         color: "yellow-text-gradient",
       },
-    ],
-    image: imiproject,
-    link_type: "external",
-    source_code_link:
-      "https://www.global-imi.com/index.php/news/imi-and-byu-hawaii-collaborate-first-campus-online-internship-program",
-  },
-]
+      {
+        name: "Canvas LMS API",
+        color: "red-text-gradient",
+      },
+      {
+        name: "OpenAI API",
+        color: "blue-text-gradient",
+      },
+		],
+		image: null,
+		link_type: null,
+		source_code_link: null,
+	},
+	{
+		name: "HI Delivery",
+		description:
+			"A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo was showcased at BYU-Hawaii's Empower Your Dreams 2024 semifinals.",
+		tags: [
+			{
+				name: "React.js",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "MUI",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Google Maps API",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Stripe API",
+				color: "orange-text-gradient",
+			},
+		],
+		image: hidelivery,
+		link_type: "external",
+		source_code_link: "https://hidelivery.app/",
+	},
+	{
+		name: "Favorite Color Website",
+		description:
+			"A simple fullstack web app created using BYU's Nuxt template that adds, deletes, and edits the information of a person's favorite color.",
+		tags: [
+			{
+				name: "TypeScript",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Vue.js",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Docker",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Terraform",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "DynamoDB",
+				color: "yellow-text-gradient",
+			},
+		],
+		image: favcolor,
+		link_type: "github",
+		source_code_link: "https://github.com/Tidbit0519/jtbt2-fav-color-ui",
+	},
+	{
+		name: "EZ Vending",
+		description:
+			"A console program that helps BYU users to locate the nearest vending machines to their current building locations, and also recommend snacks based on their desired vending category and budget, and stores their favorite snacks along with purchase dates which they can retrieve to view or delete later.",
+		tags: [
+			{
+				name: "JavaScript",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Node.js",
+				color: "green-text-gradient",
+			},
+			{
+				name: "AWS",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Oracle DB",
+				color: "orange-text-gradient",
+			},
+		],
+		image: ezvending,
+		link_type: "github",
+		source_code_link: "https://github.com/Tidbit0519/EzVending",
+	},
+	{
+		name: "IMI Training Records Automation",
+		description:
+			"A prototype web application using XAMP stack that can create, read, update, and delete training records of IMI employees.",
+		tags: [
+			{
+				name: "HTML",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "CSS",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Bootstrap",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "PHP",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "MySQL",
+				color: "yellow-text-gradient",
+			},
+		],
+		image: imiproject,
+		link_type: "external",
+		source_code_link:
+			"https://www.global-imi.com/index.php/news/imi-and-byu-hawaii-collaborate-first-campus-online-internship-program",
+	},
+];
 
 const gameProjects = [
   {
