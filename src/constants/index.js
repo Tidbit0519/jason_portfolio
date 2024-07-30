@@ -1,18 +1,16 @@
-import { c } from "maath/dist/index-0332b2ed.esm";
 import {
   html,
   css,
   javascript,
   reactjs,
   tailwind,
-  threejs,
 
   nodejs,
   csharp,
   aspnetcore,
   mysql,
+  mongodb,
   
-  git,
   unity,
   java,
   python,
@@ -70,10 +68,6 @@ import {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
 ];
   
 const backend = [
@@ -93,13 +87,13 @@ const backend = [
     name: "MySQL",
     icon: mysql,
   },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
 ];
 
 const others = [
-  {
-    name: "Git",
-    icon: git,
-  },
   {
     name: "Unity",
     icon: unity,

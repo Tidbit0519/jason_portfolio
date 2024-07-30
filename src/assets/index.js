@@ -7,14 +7,13 @@ import css from "./tech/css.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
 
 import nodejs from "./tech/nodejs.png";
 import csharp from "./tech/csharp.svg";
 import aspnetcore from "./tech/aspnetcore.png";
 import mysql from "./tech/mysql.png";
+import mongodb from "./tech/mongodb.png";
 
-import git from "./tech/git.png";
 import unity from "./tech/unity.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
@@ -52,14 +51,13 @@ export {
   javascript,
   reactjs,
   tailwind,
-  threejs,
 
   nodejs,
   csharp,
   aspnetcore,
   mysql,
+  mongodb,
 
-  git,
   unity,
   java,
   python,
