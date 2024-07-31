@@ -179,7 +179,7 @@ const testimonials = [
 
 const webProjects = [
 	{
-		name: "Canvas Feeder AI",
+		name: "LearnCanvas AI",
 		description:
 			"A fullstack web application that uses OpenAI's generative AI and Canvas LMS API to provide feedback on students' assignments and submissions. Coming Soon",
 		tags: [
