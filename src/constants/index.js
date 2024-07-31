@@ -29,7 +29,8 @@ import {
   
   spencer,
   takeyoshi,
-  sheryl
+  sheryl,
+  github
 } from "../assets";
 
   export const navLinks = [
@@ -190,36 +191,36 @@ const webProjects = [
 			{
 				name: "Tailwind CSS",
 				color: "green-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Express.js",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Canvas LMS API",
-        color: "red-text-gradient",
-      },
-      {
-        name: "OpenAI API",
-        color: "blue-text-gradient",
-      },
+			},
+			{
+				name: "Node.js",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Express.js",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "MongoDB",
+				color: "yellow-text-gradient",
+			},
+			{
+				name: "Canvas LMS API",
+				color: "red-text-gradient",
+			},
+			{
+				name: "OpenAI API",
+				color: "blue-text-gradient",
+			},
 		],
 		image: null,
-		link_type: null,
-		source_code_link: null,
+		link_type: "github",
+		source_code_link: "https://github.com/Tidbit0519/learncanvas-ai",
 	},
 	{
 		name: "HI Delivery",
 		description:
-			"A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo was showcased at BYU-Hawaii's Empower Your Dreams 2024 semifinals.",
+			"A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo won \"The Best Show Award\" at BYU-Hawaii's Empower Your Dreams 2024 semifinals.",
 		tags: [
 			{
 				name: "React.js",
