@@ -244,36 +244,6 @@ const webProjects = [
 		source_code_link: "https://hidelivery.app/",
 	},
 	{
-		name: "Favorite Color Website",
-		description:
-			"A simple fullstack web app created using BYU's Nuxt template that adds, deletes, and edits the information of a person's favorite color.",
-		tags: [
-			{
-				name: "TypeScript",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "Vue.js",
-				color: "green-text-gradient",
-			},
-			{
-				name: "Docker",
-				color: "pink-text-gradient",
-			},
-			{
-				name: "Terraform",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "DynamoDB",
-				color: "yellow-text-gradient",
-			},
-		],
-		image: favcolor,
-		link_type: "github",
-		source_code_link: "https://github.com/Tidbit0519/jtbt2-fav-color-ui",
-	},
-	{
 		name: "EZ Vending",
 		description:
 			"A console program that helps BYU users to locate the nearest vending machines to their current building locations, and also recommend snacks based on their desired vending category and budget, and stores their favorite snacks along with purchase dates which they can retrieve to view or delete later.",
