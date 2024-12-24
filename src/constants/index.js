@@ -1,188 +1,178 @@
 import {
-  html,
-  css,
-  javascript,
-  reactjs,
-  tailwind,
-
-  nodejs,
-  csharp,
-  aspnetcore,
-  mysql,
-  mongodb,
-  
-  unity,
-  java,
-  python,
-  
-  familysearch,
-  byuhawaii,
-  imi,
-  
-  hidelivery,
-  favcolor,
-  ezvending,
-  imiproject,
-  
-  gladiadog,
-  battleship,
-  
-  spencer,
-  takeyoshi,
-  sheryl,
-  github
+	html,
+	css,
+	javascript,
+	reactjs,
+	tailwind,
+	nodejs,
+	csharp,
+	aspnetcore,
+	mysql,
+	mongodb,
+	unity,
+	java,
+	python,
+	familysearch,
+	byuhawaii,
+	imi,
+	learncanvasai,
+	hidelivery,
+	ezvending,
+	imiproject,
+	gladiadog,
+	battleship,
+	spencer,
+	takeyoshi,
+	sheryl,
 } from "../assets";
 
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "experience",
-      title: "Experience",
-    },
-    {
-      id: "projects",
-      title: "Projects",
-    },
-  ];
-  
-  const frontend = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
+export const navLinks = [
+	{
+		id: "about",
+		title: "About",
+	},
+	{
+		id: "experience",
+		title: "Experience",
+	},
+	{
+		id: "projects",
+		title: "Projects",
+	},
 ];
-  
+
+const frontend = [
+	{
+		name: "HTML 5",
+		icon: html,
+	},
+	{
+		name: "CSS 3",
+		icon: css,
+	},
+	{
+		name: "JavaScript",
+		icon: javascript,
+	},
+	{
+		name: "React JS",
+		icon: reactjs,
+	},
+	{
+		name: "Tailwind CSS",
+		icon: tailwind,
+	},
+];
+
 const backend = [
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "C#",
-    icon: csharp,
-  },
-  {
-    name: "ASP.NET Core",
-    icon: aspnetcore,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+	{
+		name: "Node JS",
+		icon: nodejs,
+	},
+	{
+		name: "C#",
+		icon: csharp,
+	},
+	{
+		name: "ASP.NET Core",
+		icon: aspnetcore,
+	},
+	{
+		name: "MySQL",
+		icon: mysql,
+	},
+	{
+		name: "MongoDB",
+		icon: mongodb,
+	},
 ];
 
 const others = [
-  {
-    name: "Unity",
-    icon: unity,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
+	{
+		name: "Unity",
+		icon: unity,
+	},
+	{
+		name: "Java",
+		icon: java,
+	},
+	{
+		name: "Python",
+		icon: python,
+	},
 ];
-      
-  
+
 const experiences = [
-  {
-    title: "EIS Student Developer/Analyst",
-    company_name: "Brigham Young University-Hawaii",
-    icon: byuhawaii,
-    iconBg: "#383E56",
-    date: "May 2022 - Current",
-    points: [
-      "Developed and maintained APIs using ASP.NET Core to manage test records for a student population of approximately 3000 at BYU-Hawaii's Testing Center App",
-      "Assisted full-time developers in maintaining the frontend of 10 web applications using a low-code platform, Mendix.",
-      "Created a frontend starter app template and reduced an estimated development time by 20%",
-    ],
-  },
-  {
-    title: "Front-End Developer Intern",
-    company_name: "FamilySearch",
-    icon: familysearch,
-    iconBg: "#383E56",
-    date: "June 2023 - September 2023",
-    points: [
-      "Developed a React-based transliterator prototype for an ancient Filipino script, Baybayin.",
-      "Prototyped dynamic rendering of PDF documents within web pages using react-pdf and the Adobe PDF Embed API.",
-      "Adhered to DevOps best practices and achieve 100% code coverage in unit testing.",
-      "Collaborated with UX/UI designers to implement culturally-influenced widgets to resonate with target audiences.",
-    ],
-  },
-  {
-    title: "Project Manager Intern",
-    company_name: "Integrated Micro-Electronics, Inc. (IMI Global)",
-    icon: imi,
-    iconBg: "#383E56",
-    date: "January 2022 - April 2022",
-    points: [
-      "Pioneered an international internship collaboration between the company and the university in a team of 5 students and achieving a 100% deliverables rate despite a 17-hour timezone difference.",
-      "Prototyped a CRUD web application using XAMP stack to audit over 17,000 employees’ training records.",
-    ],
-  },
-]
+	{
+		title: "EIS Student Developer/Analyst",
+		company_name: "Brigham Young University-Hawaii",
+		icon: byuhawaii,
+		iconBg: "#383E56",
+		date: "May 2022 - Current",
+		points: [
+			"Developed a real-time dashboard using React, ASP .NET Core, and MYSQL to monitor external services with high data accuracy and minimum latency.",
+			"Developed a web API using ASP.NET Core and MYSQL to automate the management test records of 3000 users and reduce manual processing time by 95%.",
+			"Integrated SAML Single Sign-On with Quicklaunch IdP to replace cookie-based authentication to enhance web app security.",
+		],
+	},
+	{
+		title: "Front-End Developer Intern",
+		company_name: "FamilySearch",
+		icon: familysearch,
+		iconBg: "#383E56",
+		date: "June 2023 - September 2023",
+		points: [
+			"Developed a React-based transliterator prototype for an ancient Filipino script, Baybayin.",
+			"Developed a prototype for dynamic rendering of PDF documents within web pages using react-pdf and the Adobe PDF Embed API.",
+			"Adhered to DevOps best practices and achieve 100% code coverage in unit testing.",
+			"Collaborated with UX/UI designers to implement culturally-influenced widgets and pages to increase outreach of target audiences.",
+		],
+	},
+	{
+		title: "Project Manager Intern",
+		company_name: "Integrated Micro-Electronics, Inc. (IMI Global)",
+		icon: imi,
+		iconBg: "#383E56",
+		date: "January 2022 - April 2022",
+		points: [
+			"Developed a prototype CRUD web application using XAMP stack to automate the auditing of employees’ training record.",
+			"Pioneered an international internship collaboration between IMI and BYUH and achieving a 100% deliverable rate despite 17-hour time zone difference.",
+		],
+	},
+];
 
-
-  
 const testimonials = [
-  {
-    testimonial:
-      "Jason displayed a remarkable ability to swiftly master React and related technologies and consistently delivering high-quality work.",
-    name: "Spencer Memmott",
-    designation: "Full Stack Engineer",
-    company: "FamilySearch",
-    image: spencer,
-  },
-  {
-    testimonial:
-      "I have had the pleasure of working with Jason on the in-house software development project at the EIS department at BYUH. He is very thorough in everything he does and can be depended upon to get the job done.",
-    name: "Takeyoshi Nitta",
-    designation: "Industry Process Consultant",
-    company: "Dassault Systèmes",
-    image: takeyoshi,
-  },
-  {
-    testimonial:
-      "I can attest that Jason is a brilliant problem-solver, multi-tasker, and team player. He is resilient when it comes to overcoming challenges and staying on top of his assignments.",
-    name: "Sheryl Tania",
-    designation: "Product Engineer",
-    company: "Esri",
-    image: sheryl,
-  },
-]
+	{
+		testimonial:
+			"Jason displayed a remarkable ability to swiftly master React and related technologies and consistently delivering high-quality work.",
+		name: "Spencer Memmott",
+		designation: "Full Stack Engineer",
+		company: "FamilySearch",
+		image: spencer,
+	},
+	{
+		testimonial:
+			"I have had the pleasure of working with Jason on the in-house software development project at the EIS department at BYUH. He is very thorough in everything he does and can be depended upon to get the job done.",
+		name: "Takeyoshi Nitta",
+		designation: "Industry Process Consultant",
+		company: "Dassault Systèmes",
+		image: takeyoshi,
+	},
+	{
+		testimonial:
+			"I can attest that Jason is a brilliant problem-solver, multi-tasker, and team player. He is resilient when it comes to overcoming challenges and staying on top of his assignments.",
+		name: "Sheryl Tania",
+		designation: "Product Engineer",
+		company: "Esri",
+		image: sheryl,
+	},
+];
 
 const webProjects = [
 	{
 		name: "LearnCanvas AI",
 		description:
-			"A fullstack web application that uses OpenAI's generative AI and Canvas LMS API to provide feedback on students' assignments and submissions. Coming Soon",
+			"A fullstack web application that uses OpenAI's generative AI and Canvas LMS API to provide feedback on students' assignments and submissions",
 		tags: [
 			{
 				name: "React.js",
@@ -213,14 +203,14 @@ const webProjects = [
 				color: "blue-text-gradient",
 			},
 		],
-		image: null,
+		image: learncanvasai,
 		link_type: "github",
 		source_code_link: "https://github.com/Tidbit0519/learncanvas-ai",
 	},
 	{
 		name: "HI Delivery",
 		description:
-			"A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo won \"The Best Show Award\" at BYU-Hawaii's Empower Your Dreams 2024 semifinals.",
+			'A demo front-end web application that allows users to put their grocery orders online and have them delivered to their homes in North Shore, Oahu. This demo won "The Best Show Award" at BYU-Hawaii\'s Empower Your Dreams 2024 semifinals.',
 		tags: [
 			{
 				name: "React.js",
@@ -303,50 +293,50 @@ const webProjects = [
 ];
 
 const gameProjects = [
-  {
-    name: "Battleship",
-    description:
-      "A simple 2D android mobile game where user control a battleship on the center of the screen and shoots any incoming airplanes and submarines to get the highest possible score within the time limit.",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Android Studio",
-        color: "green-text-gradient",
-      },
-    ],
-    image: battleship,
-    link_type: "github",
-    source_code_link: "https://github.com/Tidbit0519/battleship-game",
-  },
-  {
-    name: "Gladiadog",
-    description:
-      "An action arcade game where the player controls a dog swordsman and defeats a giant slime in a gladiator arena! There a re a total of 3 rounds, and only the best time is saved! The game is developed as part of my college's Unity game project, and it is still a prototype. Feel free to leave a feedback!",
-    tags: [
-      {
-        name: "C#",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Unity",
-        color: "green-text-gradient",
-      },
-    ],
-    image: gladiadog,
-    link_type: "external",
-    source_code_link: "https://tibit0519.itch.io/gladiadog",
-  },
-]
-  
+	{
+		name: "Battleship",
+		description:
+			"A simple 2D android mobile game where user control a battleship on the center of the screen and shoots any incoming airplanes and submarines to get the highest possible score within the time limit.",
+		tags: [
+			{
+				name: "Java",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Android Studio",
+				color: "green-text-gradient",
+			},
+		],
+		image: battleship,
+		link_type: "github",
+		source_code_link: "https://github.com/Tidbit0519/battleship-game",
+	},
+	{
+		name: "Gladiadog",
+		description:
+			"An action arcade game where the player controls a dog swordsman and defeats a giant slime in a gladiator arena! There a re a total of 3 rounds, and only the best time is saved! The game is developed as part of my college's Unity game project, and it is still a prototype. Feel free to leave a feedback!",
+		tags: [
+			{
+				name: "C#",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Unity",
+				color: "green-text-gradient",
+			},
+		],
+		image: gladiadog,
+		link_type: "external",
+		source_code_link: "https://tibit0519.itch.io/gladiadog",
+	},
+];
+
 export {
-  frontend,
-  backend,
-  others,
-  experiences,
-  webProjects,
-  gameProjects,
-  testimonials,
-}
+	frontend,
+	backend,
+	others,
+	experiences,
+	webProjects,
+	gameProjects,
+	testimonials,
+};

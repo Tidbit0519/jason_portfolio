@@ -19,64 +19,56 @@ import java from "./tech/java.png";
 import python from "./tech/python.png";
 
 import familysearch from "./experience/familysearch.png";
-import byuhawaii from "./experience/byuhawaii.png"
-import imi from "./experience/imi.png"
+import byuhawaii from "./experience/byuhawaii.png";
+import imi from "./experience/imi.png";
 
 import github from "./project/github.png";
 import external from "./project/external.png";
 
+import learncanvasai from "./project/learncanvas-ai.png";
 import hidelivery from "./project/hidelivery.png";
-import favcolor from "./project/favcolor.png";
-import ezvending from "./project/ezvending.png"
-import imiproject from "./project/imiproject.png"
+import ezvending from "./project/ezvending.png";
+import imiproject from "./project/imiproject.png";
 
-import gladiadog from "./project/gladiadog.png"
-import battleship from "./project/battleship.png"
+import gladiadog from "./project/gladiadog.png";
+import battleship from "./project/battleship.png";
 
 import spencer from "./testimonials/spencer.jpeg";
 import takeyoshi from "./testimonials/takeyoshi.jfif";
-import sheryl from "./testimonials/sheryl.jfif"
+import sheryl from "./testimonials/sheryl.jfif";
 
 import rocket from "./rocket.gif";
 
 export {
-  logo,
-  github,
-  external,
-  menu,
-  close,
-  
-  html,
-  css,
-  javascript,
-  reactjs,
-  tailwind,
-
-  nodejs,
-  csharp,
-  aspnetcore,
-  mysql,
-  mongodb,
-
-  unity,
-  java,
-  python,
-
-  familysearch,
-  byuhawaii,
-  imi,
-  
-  hidelivery,
-  favcolor,
-  ezvending,
-  imiproject,
-
-  gladiadog,
-  battleship,
-
-  spencer,
-  takeyoshi,
-  sheryl,
-
-  rocket,
+	logo,
+	github,
+	external,
+	menu,
+	close,
+	html,
+	css,
+	javascript,
+	reactjs,
+	tailwind,
+	nodejs,
+	csharp,
+	aspnetcore,
+	mysql,
+	mongodb,
+	unity,
+	java,
+	python,
+	familysearch,
+	byuhawaii,
+	imi,
+	learncanvasai,
+	hidelivery,
+	ezvending,
+	imiproject,
+	gladiadog,
+	battleship,
+	spencer,
+	takeyoshi,
+	sheryl,
+	rocket,
 };
