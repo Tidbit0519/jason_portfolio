@@ -2,13 +2,17 @@ import {
 	html,
 	css,
 	javascript,
+	typescript,
+	sql,
 	reactjs,
-	tailwind,
 	nodejs,
 	csharp,
 	aspnetcore,
 	mysql,
 	mongodb,
+	docker,
+	aws,
+	azure,
 	unity,
 	java,
 	python,
@@ -41,13 +45,13 @@ export const navLinks = [
 	},
 ];
 
-const frontend = [
+const languages = [
 	{
-		name: "HTML 5",
+		name: "HTML",
 		icon: html,
 	},
 	{
-		name: "CSS 3",
+		name: "CSS",
 		icon: css,
 	},
 	{
@@ -55,24 +59,37 @@ const frontend = [
 		icon: javascript,
 	},
 	{
-		name: "React JS",
-		icon: reactjs,
-	},
-	{
-		name: "Tailwind CSS",
-		icon: tailwind,
-	},
-];
-
-const backend = [
-	{
-		name: "Node JS",
-		icon: nodejs,
+		name: "TypeScript",
+		icon: typescript,
 	},
 	{
 		name: "C#",
 		icon: csharp,
 	},
+	{
+		name: "SQL",
+		icon: sql,
+	},
+	{
+		name: "Python",
+		icon: python,
+	},
+	{
+		name: "Java",
+		icon: java,
+	},
+];
+
+const technologies = [
+	{
+		name: "React JS",
+		icon: reactjs,
+	},
+	{
+		name: "Node JS",
+		icon: nodejs,
+	},
+
 	{
 		name: "ASP.NET Core",
 		icon: aspnetcore,
@@ -85,20 +102,21 @@ const backend = [
 		name: "MongoDB",
 		icon: mongodb,
 	},
-];
-
-const others = [
+	{
+		name: "Docker",
+		icon: docker,
+	},
+	{
+		name: "AWS",
+		icon: aws,
+	},
+	{
+		name: "Azure",
+		icon: azure,
+	},
 	{
 		name: "Unity",
 		icon: unity,
-	},
-	{
-		name: "Java",
-		icon: java,
-	},
-	{
-		name: "Python",
-		icon: python,
 	},
 ];
 
@@ -332,9 +350,8 @@ const gameProjects = [
 ];
 
 export {
-	frontend,
-	backend,
-	others,
+	languages,
+	technologies,
 	experiences,
 	webProjects,
 	gameProjects,
