@@ -25,7 +25,7 @@ const Tech = () => {
 			<div className="flex flex-wrap gap-10 justify-center items-center mb-4">
 				{languages.map((skill) => (
 					<div
-						className="block-container rounded-xl w-16 h-16 sm:w-20 sm:h-20 bg-white flex flex-col justify-center items-center"
+						className="block-container rounded-xl w-16 h-16 sm:w-20 sm:h-20 bg-slate-300 flex flex-col justify-center items-center"
 						key={skill.name}
 					>
 						<div className="btn-front rounded-3xl flex justify-center items-center">
@@ -50,7 +50,7 @@ const Tech = () => {
 			<div className="flex flex-wrap gap-10 justify-center items-center">
 				{technologies.map((skill) => (
 					<div
-						className="block-container rounded-xl w-16 h-16 sm:w-20 sm:h-20 bg-white flex flex-col justify-center items-center"
+						className="block-container rounded-xl w-16 h-16 sm:w-20 sm:h-20 bg-slate-300 flex flex-col justify-center items-center"
 						key={skill.name}
 					>
 						<div className="btn-front rounded-3xl flex justify-center items-center">

@@ -16,6 +16,7 @@ import {
 	unity,
 	java,
 	python,
+	accessifiers,
 	familysearch,
 	byuhawaii,
 	imi,
@@ -122,15 +123,28 @@ const technologies = [
 
 const experiences = [
 	{
+		title: "Software Engineer (Volunteer)",
+		company_name: "Accessifiers",
+		icon: accessifiers,
+		iconBg: "#383E56",
+		date: "September 2024 - Current",
+		points: [
+			"Developed a branded learning management system using SASS and Python to reinforce brand identity.",
+			"Developed a scalable LMS prototype on Azure with Docker and Tutor(Open edX).",
+			"Mentored team members and project sponsor on LMS technologies through creating comprehensive documentation to facilitate knowledge transfer.",
+		],
+	},
+	{
 		title: "EIS Student Developer/Analyst",
 		company_name: "Brigham Young University-Hawaii",
 		icon: byuhawaii,
 		iconBg: "#383E56",
 		date: "May 2022 - Current",
 		points: [
-			"Developed a real-time dashboard using React, ASP .NET Core, and MYSQL to monitor external services with high data accuracy and minimum latency.",
-			"Developed a web API using ASP.NET Core and MYSQL to automate the management test records of 3000 users and reduce manual processing time by 95%.",
+			"Developed a real-time dashboard prototype using React, ASP.NET Core, and MySQL to monitor external services with robust caching and minimum latency.",
+			"Developed a REST API using ASP.NET Core and MySQL to automate test record management of 3000 users and reduce manual processing time by 95%",
 			"Integrated SAML Single Sign-On with Quicklaunch IdP to replace cookie-based authentication to enhance web app security.",
+			"Maintained 9 web applications using Agile practice through code reviews, bug fixes, and version control to improve code quality and reduce technical debt.",
 		],
 	},
 	{
@@ -140,10 +154,10 @@ const experiences = [
 		iconBg: "#383E56",
 		date: "June 2023 - September 2023",
 		points: [
-			"Developed a React-based transliterator prototype for an ancient Filipino script, Baybayin.",
-			"Developed a prototype for dynamic rendering of PDF documents within web pages using react-pdf and the Adobe PDF Embed API.",
-			"Adhered to DevOps best practices and achieve 100% code coverage in unit testing.",
-			"Collaborated with UX/UI designers to implement culturally-influenced widgets and pages to increase outreach of target audiences.",
+			"Developed a transliteration prototype using JavaScript and React to convert Romanized Filipino names into the ancient Baybayin script",
+			"Developed a prototype for dynamic rendering of PDF documents within web pages using React and FamilySearch in -house UI components.",
+			"Implemented automated unit and integration testing and achieved 100% code coverage in unit testing using react - testing - library and jest",
+			"Collaborated with UX/UI designers to implement culturally influenced UI components and pages from Figma to increase engagement and outreach of target audience",
 		],
 	},
 	{

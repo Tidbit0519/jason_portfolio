@@ -22,6 +22,7 @@ import unity from "./tech/unity.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
 
+import accessifiers from "./experience/accessifiers.png";
 import familysearch from "./experience/familysearch.png";
 import byuhawaii from "./experience/byuhawaii.png";
 import imi from "./experience/imi.png";
@@ -66,6 +67,7 @@ export {
 	unity,
 	java,
 	python,
+	accessifiers,
 	familysearch,
 	byuhawaii,
 	imi,
